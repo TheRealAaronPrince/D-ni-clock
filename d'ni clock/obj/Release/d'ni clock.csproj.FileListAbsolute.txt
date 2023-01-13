@@ -1,0 +1,3 @@
+C:\Users\princ\Documents\SharpDevelop Projects\d'ni clock\d'ni clock\bin\Release\d'ni clock.exe
+C:\Users\princ\Documents\SharpDevelop Projects\d'ni clock\d'ni clock\obj\Release\d'ni clock.csprojResolveAssemblyReference.cache
+C:\Users\princ\Documents\SharpDevelop Projects\d'ni clock\d'ni clock\obj\Release\d'ni clock.exe
