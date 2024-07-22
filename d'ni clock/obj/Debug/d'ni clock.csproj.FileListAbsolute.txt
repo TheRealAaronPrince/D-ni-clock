@@ -1,5 +1,0 @@
-C:\Users\princ\Documents\SharpDevelop Projects\d'ni clock\d'ni clock\bin\Debug\d'ni clock.exe
-C:\Users\princ\Documents\SharpDevelop Projects\d'ni clock\d'ni clock\bin\Debug\d'ni clock.pdb
-C:\Users\princ\Documents\SharpDevelop Projects\d'ni clock\d'ni clock\obj\Debug\d'ni clock.csprojResolveAssemblyReference.cache
-C:\Users\princ\Documents\SharpDevelop Projects\d'ni clock\d'ni clock\obj\Debug\d'ni clock.exe
-C:\Users\princ\Documents\SharpDevelop Projects\d'ni clock\d'ni clock\obj\Debug\d'ni clock.pdb
