@@ -107,6 +107,10 @@ namespace d_ni_clock
 			label2.Width = Lwidth;
 			label2.Height = Lheight;
 			label2.Font = new Font(font,30);
+			while(label2.Width < System.Windows.Forms.TextRenderer.MeasureText(label2.Text, new Font(label2.Font.FontFamily, label2.Font.Size, label2.Font.Style)).Width)
+			{
+				label2.Font = new Font(label2.Font.FontFamily, label2.Font.Size - 0.5f, label2.Font.Style);
+			}
 			label2.Location = new Point(randX,randY+Lheight);
 			this.label1.Refresh();
 			this.label2.Refresh();
