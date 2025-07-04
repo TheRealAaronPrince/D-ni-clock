@@ -24,10 +24,14 @@ namespace d_ni_clock
 		public Form1()
 		{
 			InitializeComponent();
+			this.Text = "screensaver settings";
+			this.Size = new Size(300,100);
+			this.MinimumSize = this.Size;
+			this.MaximumSize = this.Size;
 			ComboBox AllFonts = new ComboBox();
 			AllFonts.DrawMode = DrawMode.OwnerDrawFixed;
 			AllFonts.Location = new Point(0,0);
-			AllFonts.Width = 275;
+			AllFonts.Width = this.Width-20;
 			AllFonts.DataSource = System.Drawing.FontFamily.Families.ToList();
 			AllFonts.DrawItem += ComboBoxFonts_DrawItem;
 			this.Controls.Add(AllFonts);

@@ -13,7 +13,7 @@ namespace d_ni_clock
 		int randY = 0;
 		int change = 0;
 		int Lwidth = 350;
-		int Lheight = 150;
+		int Lheight = 100;
 		string options = "C://clock Screensaver/font.txt";
 		Label label1 = new Label();
 		Label label2 = new Label();
@@ -55,6 +55,10 @@ namespace d_ni_clock
 			label1.Width = Lwidth;
 			label1.Height = Lheight;
 			label1.Font = new Font(font,30);
+			while(label1.Width < System.Windows.Forms.TextRenderer.MeasureText(label1.Text, new Font(label1.Font.FontFamily, label1.Font.Size, label1.Font.Style)).Width)
+			{
+				label1.Font = new Font(label1.Font.FontFamily, label1.Font.Size - 0.5f, label1.Font.Style);
+			}
 			label1.TextAlign = ContentAlignment.MiddleCenter;
 			Controls.Add(label2);
 			label2.BackColor = System.Drawing.Color.Transparent;
@@ -62,6 +66,10 @@ namespace d_ni_clock
 			label2.Width = Lwidth;
 			label2.Height = Lheight;
 			label2.Font = new Font(font,30);
+			while(label2.Width < System.Windows.Forms.TextRenderer.MeasureText(label2.Text, new Font(label2.Font.FontFamily, label2.Font.Size, label2.Font.Style)).Width)
+			{
+				label2.Font = new Font(label2.Font.FontFamily, label2.Font.Size - 0.5f, label2.Font.Style);
+			}
 			label2.TextAlign = ContentAlignment.MiddleCenter;
 			label2.Location = new Point(0,Lheight);
 			Controls.Add(label1);
@@ -71,9 +79,9 @@ namespace d_ni_clock
 		}
 		private void randomize()
 		{
-				Random r = new Random();
-				randX = r.Next(0, this.Width-Lwidth);
-				randY = r.Next(0, this.Height-(Lheight*2));
+			Random r = new Random();
+			randX = r.Next(0, this.Width-Lwidth);
+			randY = r.Next(0, this.Height-(Lheight*2));
 		}
 		private void Form1_SizeChanged(object sender, EventArgs e)
 		{
@@ -91,6 +99,10 @@ namespace d_ni_clock
 			label1.Width = Lwidth;
 			label1.Height = 100;
 			label1.Font = new Font(font,30);
+			while(label1.Width < System.Windows.Forms.TextRenderer.MeasureText(label1.Text, new Font(label1.Font.FontFamily, label1.Font.Size, label1.Font.Style)).Width)
+			{
+				label1.Font = new Font(label1.Font.FontFamily, label1.Font.Size - 0.5f, label1.Font.Style);
+			}
 			label1.Location = new Point(randX,randY);
 			label2.Width = Lwidth;
 			label2.Height = Lheight;
