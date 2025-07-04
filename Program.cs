@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Windows.Forms;
 
@@ -17,17 +17,17 @@ namespace d_ni_clock
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-	//		if ((args.Length > 0 && (args[0] == "/s" || args[0] == "/p")))
-	//		{
-	//			if(!(args[0] == "/p"))
-	//			{
-				    Application.Run(new MainForm());
-	//			}
-	//		}
-	//		else
-	//		{
-	//				Application.Run(new Form1());
-	//		}
+			if ((args.Length > 0 && (args[0] == "/s" || args[0] == "/p")))
+			{
+				if(!(args[0] == "/p"))
+				{
+					Application.Run(new MainForm());
+				}
+			}
+			else
+			{
+				Application.Run(new Form1());
+			}
 		}
 		
 	}
